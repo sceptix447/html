@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>Order Form</title>
+    <style>
+      .mylabel {
+        display: inline-block;
+        width: 60px;
+        text-align: right;
+        margin-right: 10px;
+      }
+      .mylabel2 {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+      }
+      .mylabel3 {
+        display: inline-block;
+        width: 150px;
+        text-align: left;
+      }
+      td,
+      th {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body bgcolor="violet">
+    <h1 style="text-align: center">Welcome to Swadeshi Co. Pvt. Ltd.</h1>
+    <h2 style="text-align: center">Please fill the order form</h2>
+    <form style="margin-left: 10px">
+      <label for="name" class="mylabel">Name:</label>
+      <input type="text" name="name" style="width: 300px" />
+      <br />
+      <br />
+      <label for="email" class="mylabel">Email:</label>
+      <input type="email" name="email" style="width: 300px" />
+      <br />
+      <br />
+      <label
+        for="address"
+        class="mylabel"
+        style="line-height: 100px; vertical-align: middle"
+        >Address:</label
+      >
+      <textarea
+        name="address"
+        style="width: 300px; height: 100px; vertical-align: middle"
+      ></textarea>
+      <br />
+      <br />
+      <label for="pincode" class="mylabel">Pincode:</label>
+      <input type="number" name="pincode" style="width: 300px" />
+      <br />
+      <br />
+      <table border="1" bgcolor="lightgrey">
+        <tr>
+          <th>Product-Name</th>
+          <th>Product_Id</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Kurta-Pyjama</td>
+          <td>KP</td>
+          <td><input type="number" name="quantity1" id="quantity1" /></td>
+          <td>Rs1500</td>
+          <td>₹</td>
+        </tr>
+        <tr>
+          <td>Blazer</td>
+          <td>BLZ</td>
+          <td><input type="number" name="quantity2" id="quantity2" /></td>
+          <td>Rs3300</td>
+          <td>₹</td>
+        </tr>
+        <tr>
+          <td>Sweatshirt</td>
+          <td>SWT</td>
+          <td><input type="number" name="quantity3" id="quantity3" /></td>
+          <td>Rs899</td>
+          <td>₹</td>
+        </tr>
+        <tr>
+          <td>Nehru-Jacket</td>
+          <td>NHJ</td>
+          <td><input type="number" name="quantity4" id="quantity4" /></td>
+          <td>Rs1200</td>
+          <td>₹</td>
+        </tr>
+        <tr>
+          <td>Shirt</td>
+          <td>SHT</td>
+          <td><input type="number" name="quantity5" id="quantity5" /></td>
+          <td>Rs1399</td>
+          <td>₹</td>
+        </tr>
+        <tr>
+          <td colspan="4" style="text-align: right">Grand Total:</td>
+          <td>₹</td>
+        </tr>
+      </table>
+      <br />
+      <br />
+      <legend><strong>Credit/Debit Card Details</strong></legend>
+      <label style="margin-left: 5px">Card Type:</label>
+      <br />
+      <input type="radio" name="cardtype" value="Mastercard" />
+      <label for="mastercard" class="mylabel3">Mastercard</label>
+      <label for="cardnumber" class="mylabel2">Card Number:</label>
+      <input type="text" name="cardnumber" />
+      <br />
+      <input type="radio" name="cardtype" value="Visa" />
+      <label for="visa" class="mylabel3">Visa</label>
+      <label for="Expiry date:" class="mylabel2">Expiry date:</label>
+      <input type="text" name="expiry" placeholder="mm/yy" />
+      <br />
+      <input type="radio" name="cardtype" value="American Express" />
+      <label for="amex" class="mylabel3">American Express</label>
+      <label for="cvv" class="mylabel2">CVV:</label>
+      <input type="password" name="cvv" />
+      <br />
+      <br />
+      <br />
+      <label
+        for="deliveryaddress"
+        class="mylabel"
+        style="width: 120px; line-height: 100px; vertical-align: middle"
+        >Delivery Address:</label
+      >
+      <textarea
+        name="deliveryaddress"
+        style="width: 300px; height: 100px; vertical-align: middle"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Send order" />
+      <input type="reset" value="Clear form" />
+    </form>
+  </body>
+</html>
